@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Blog</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img src="Images/ChristinaMountain.png" alt="logo in the navbar">
-                <!-- the alt="" is meant to hold a discription of the scr image-->
-            </nav>
-        </header>
-        <main>
-            <article>
-                <h3>We like to take trips to the mountains!</h3>
-                <p>We like to take trips to the mountians to camp, hike, and reelax in a beautiful setting. Playing in the cool streams during the warm months and breathing in the fresh air in the winter is a wonderful experience. I am testing to see how long this line will go on before it moves to another line. </p>
-                <p>This is a seperate paragraph full of test. Many words to fill up the page with go here. Adding more and more. I can see that adding a seperate tag for paragraph seperates each tag with a line space.</p>
-            </article>
-            <article>
-                <h1>Header 1: Most imporant things like titles.</h1>
-                <h2>Header 2: 2nd most imporant thing and so on.</h2>
-                <h3>Header 3</h3>
-                <h4>Header 4</h4>
-                <h5>Header 5</h5>
-                <h6>Header 6</h6>
-                <!--Header elements are used to state how important text is on the page.
+
+<head>
+    <title>My Blog</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="Images/ChristinaMountain.png" alt="logo in the navbar">
+            <!-- the alt="" is meant to hold a discription of the scr image-->
+        </nav>
+    </header>
+    <main>
+        <!--the closing tag goes on the END of the attributes not the original element, that fill in the element!-->
+        <form action="">
+            <input name="email" type="email" placeholder="email">
+            <input type="number">
+            <input type="tel">
+            <input type="checkbox" name="check1"> option 1
+            <input type="checkbox" name="check2" id=""> option 2
+            <input type="radio" name="check1"> option 1
+            <input type="radio" name="check2" id=""> option 1
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button type="submit">save something</button>
+            <select name="states" id="">
+                <option value="1">GA</option>
+                <option value="2">TN</option>
+            </select>
+        </form>
+        <!--make sure to include the relative path of all media if its in a subfolder.-->
+        <video src="videos/ManT.mp4" height="300px" type="video/mp4" controls></video>
+        <article>
+            <a href="https://www.youtube.com/watch?v=watuDUBB2wg&t=393s" title="ASMRChristina" target="_blank"
+                rel="noopener noreferrer">
+                Christina's ASMR
+            </a>
+            <h3>We like to take trips to the mountains!</h3>
+            <p>We like to take trips to the mountians to camp, hike, and relax in a beautiful setting. Playing in the
+                cool streams during the warm months and breathing in the fresh air in the winter is a wonderful
+                experience. I am testing to see how long this line will go on before it moves to another line. </p>
+            <p>You can add a a span tag as an inline element, used to apply styles to specific text. <span> THIS WOULD
+                    BE RED.</span> And this goes back to normal.</p>
+            <p>This is a seperate paragraph full of text. Many words to fill up the page will go here. Adding more and
+                more. I can see that adding a seperate tag for paragraph seperates each tag with a line space.</p>
+        </article>
+        <article>
+            <h1>Header 1: Most imporant things like titles.</h1>
+            <h2>Header 2: 2nd most imporant thing and so on.</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+            <!--Header elements are used to state how important text is on the page.
                 with h1 being used only once and many h2-h3, ocasionally h4-6-->
-                <article>
-                    <h3>A list of completed trails</h3>
-                    <ol>
-                        <li>Alum cave mount leconte</li>
-                        <li>Charlies bunion</li>
-                        <li>Smokemont loop</li>
-                        <li>Mingus mill</li>
-                        <li>Deep creek loop</li>
-                        <li>Chimney tops</li>
-                        <li>little river cucumber gap</li>
-                        <li>Rainbow falls</li>
-                        <li>Smokemont nature loop</li>
-                        <li>Elkmont nature loop</li>
-                    </ol>
-                    <h3>Trails on the To-do list</h3>
-                    <ul>
-                        <li>Gregory bald</li>
-                        <li>Spence Field</li>
-                        <li>Clingmans dome via AT</li>
-                        <li>Shuckstack tower</li>
-                        <li>Abrams falls</li>
-                        <li>Newton bald</li>
-                        <li>Rocky Top</li>
-                        <li>Laurel falls</li>
-                        <li>Goshen prong</li>
-                        <li>Lonesome pine</li>
-                    </ul>
-                </article>
+            <article>
+                <h3>A list of completed trails</h3>
+                <ol>
+                    <li>Alum cave mount leconte</li>
+                    <li>Charlies bunion</li>
+                    <li>Smokemont loop</li>
+                    <li>Mingus mill</li>
+                    <li>Deep creek loop</li>
+                    <li>Chimney tops</li>
+                    <li>little river cucumber gap</li>
+                    <li>Rainbow falls</li>
+                    <li>Smokemont nature loop</li>
+                    <li>Elkmont nature loop</li>
+                </ol>
+                <h3>Trails on the To-do list</h3>
+                <ul>
+                    <li>Gregory bald</li>
+                    <li>Spence Field</li>
+                    <li>Clingmans dome via AT</li>
+                    <li>Shuckstack tower</li>
+                    <li>Abrams falls</li>
+                    <li>Newton bald</li>
+                    <li>Rocky Top</li>
+                    <li>Laurel falls</li>
+                    <li>Goshen prong</li>
+                    <li>Lonesome pine</li>
+                    <li>Rich mountain</li>
+                </ul>
+                <ol>
+                    <li>step 1</li>
+                    <li>step 2</li>
+                    <li>step 3</li>
+                </ol>
             </article>
-            <div>Random words here!</div>
-            <section>
-                <div>Other content</div>
-                <div>MORE things!!!!</div>
-                <div>additional text</div>
-            </section>
-        </main>
-        <footer>Footer</footer>
-    </body>
+        </article>
+        <div>Random words here!</div>
+        <section>
+            <div>Other content</div>
+            <div>MORE things!!!!</div>
+            <div>additional text</div>
+        </section>
+    </main>
+    <footer>Footer with some random stuff for testing.
+        <a href="https//:presearch.com" title="Presearch.com" target="_blank" rel="noopener noreferrer">Go to
+            Presearch</a>
+    </footer>
+</body>
+
 </html>
